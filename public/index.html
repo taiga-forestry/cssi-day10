@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Best Restaurants in LA </title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script defer src="/__/firebase/8.3.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.3.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  </head>
+
+  <body>
+    <h1 class="title has-text-centered"> Best Restaurants in LA! </h1>
+    <h2 class="has-text-centered"> The best spots for a quick bite in Los Angeles, California </h2>
+    <!-- add search bar here! -->
+    <div class="navbar is-inline-flex is-transparent">
+        <div class="navbar-item">
+            <div class="control">
+                <input class="input is-small has-text-centered" type="text" placeholder="search" id="search" onchange="search()">	
+            </div>
+        </div>
+    </div>
+
+    <div id = "searchResults">
+
+    </div>
+
+
+
+
+
+
+
+    <script src="js/viewRestaurants.js"></script>
+  </body>
+
+</html>
